@@ -3,574 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Adhithe - AI-Powered Textbook-Grounded Learning Platform for Classes 5-12">
-    <title>Adhithe - AI Learning Platform | Classes 5-12</title>
+    <meta name="description" content="Adhithe - Coming Soon | AI-Powered Learning Platform">
+    <title>Adhithe - Coming Soon</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-brand">
-                <span class="brand-icon">🧠</span>
-                <span class="brand-text">Adhithe</span>
-            </div>
-            <div class="nav-search">
-                <form class="search-form" id="searchForm">
-                    <input type="text" placeholder="Search any topic..." class="search-input" id="searchInput">
-                    <select class="filter-select" id="classFilter">
-                        <option>All Classes</option>
-                        <option>Class 5</option>
-                        <option>Class 6</option>
-                        <option>Class 7</option>
-                        <option>Class 8</option>
-                        <option>Class 9</option>
-                        <option>Class 10</option>
-                        <option>Class 11</option>
-                        <option>Class 12</option>
-                    </select>
-                    <select class="filter-select" id="subjectFilter">
-                        <option>All Subjects</option>
-                        <option>Mathematics</option>
-                        <option>Science</option>
-                        <option>Social Studies</option>
-                        <option>English</option>
-                        <option>Physics</option>
-                        <option>Chemistry</option>
-                        <option>Biology</option>
-                    </select>
-                    <button type="submit" class="search-btn">Search</button>
-                </form>
-            </div>
-            <div class="nav-actions">
-                <select class="language-select" id="languageSelect">
-                    <option>English</option>
-                    <option>Hindi</option>
-                    <option>Bengali</option>
-                    <option>Telugu</option>
-                    <option>Marathi</option>
-                    <option>Tamil</option>
-                    <option>Gujarati</option>
-                    <option>Kannada</option>
-                    <option>Malayalam</option>
-                </select>
-                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-background">
+    <div class="coming-soon-container">
+        <div class="background">
             <div class="gradient-orb orb-1"></div>
             <div class="gradient-orb orb-2"></div>
             <div class="gradient-orb orb-3"></div>
             <div class="grid-pattern"></div>
         </div>
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-badge">
-                    <span class="pulse-dot"></span>
-                    <span>AI-Powered Learning Platform</span>
-                </div>
-                <h1 class="hero-title">
-                    <span class="title-line">Adhithe</span>
-                    <span class="title-gradient">Intelligent Learning</span>
-                </h1>
-                <p class="hero-description">
-                    Textbook-grounded AI platform for classes 5–12. Transform official NCERT and state-board textbooks into personalized articles, audio, videos, and interactive content powered by advanced AI.
-                </p>
-                <div class="hero-cta">
-                    <a href="#about" class="btn btn-primary">
-                        <span>Explore Platform</span>
+        
+        <div class="content">
+            <div class="brand">
+                <span class="brand-icon">🧠</span>
+                <h1 class="brand-name">Adhithe</h1>
+            </div>
+            
+            <h2 class="coming-soon-title">Coming Soon</h2>
+            
+            <p class="description">
+                AI-powered textbook-grounded learning platform for classes 5-12
+            </p>
+            
+            <div class="features-preview">
+                <div class="feature-tag">📚 Official Textbooks</div>
+                <div class="feature-tag">🤖 AI-Powered</div>
+                <div class="feature-tag">🌐 Multi-Language</div>
+            </div>
+            
+            <div class="notify-section">
+                <p class="notify-text">Get notified when we launch</p>
+                <form class="notify-form" id="notifyForm">
+                    <input 
+                        type="email" 
+                        placeholder="Enter your email" 
+                        class="email-input"
+                        required
+                    >
+                    <button type="submit" class="notify-btn">
+                        <span>Notify Me</span>
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                    </a>
-                    <a href="#how-it-works" class="btn btn-secondary">
-                        <span>See How It Works</span>
-                    </a>
-                </div>
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <div class="stat-number">100%</div>
-                        <div class="stat-label">Textbook-Sourced</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">12+</div>
-                        <div class="stat-label">Languages</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">5-12</div>
-                        <div class="stat-label">Classes</div>
-                    </div>
-                </div>
+                    </button>
+                </form>
             </div>
-            <div class="hero-visual">
-                <div class="floating-card card-1">
-                    <div class="card-icon">📚</div>
-                    <h3>Official Textbooks</h3>
-                    <p>NCERT & State Board</p>
-                </div>
-                <div class="floating-card card-2">
-                    <div class="card-icon">🤖</div>
-                    <h3>AI-Powered</h3>
-                    <p>Smart Content Generation</p>
-                </div>
-                <div class="floating-card card-3">
-                    <div class="card-icon">🌐</div>
-                    <h3>Multi-Language</h3>
-                    <p>English + Indian Languages</p>
-                </div>
+            
+            <div class="footer-text">
+                <p>Powered by AI • Textbook-Grounded • Classes 5-12</p>
             </div>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">About Adhithe</span>
-                <h2 class="section-title">AI-Powered Learning, Textbook-Grounded</h2>
-                <p class="section-subtitle">
-                    Combining the reliability of official textbooks with the power of artificial intelligence
-                </p>
-            </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <p class="about-description">
-                        Adhithe is a revolutionary <strong>AI-powered learning platform</strong> designed for Indian students from classes 5 to 12. It uses <strong>only official NCERT and state-board textbooks</strong> as its reference sources, ensuring accuracy, reliability, and perfect alignment with the school curriculum.
-                    </p>
-                    <p class="about-description">
-                        Our advanced AI system retrieves exact textbook content and intelligently converts it into clear articles, short audio lessons, concise videos, interactive sandboxes, or runnable code demonstrations. Everything is available in both English and major Indian languages.
-                    </p>
-                    <p class="about-description">
-                        By staying fully rooted in official educational material and enhanced with AI capabilities, Adhithe provides a trustworthy, intelligent way to learn, revise, and understand subjects without relying on uncertain online information.
-                    </p>
-                </div>
-                <div class="about-features">
-                    <div class="feature-item">
-                        <div class="feature-icon">📖</div>
-                        <h3>Official Sources Only</h3>
-                        <p>NCERT and state-board textbooks as the sole reference</p>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">🤖</div>
-                        <h3>AI-Enhanced</h3>
-                        <p>Intelligent content generation and personalization</p>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">🎓</div>
-                        <h3>Classes 5-12</h3>
-                        <p>Comprehensive coverage for all grade levels</p>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">🔒</div>
-                        <h3>100% Reliable</h3>
-                        <p>No external or unreliable content sources</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- How It Works Section -->
-    <section id="how-it-works" class="how-it-works">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">How It Works</span>
-                <h2 class="section-title">Simple Three-Step AI Process</h2>
-                <p class="section-subtitle">
-                    Experience the power of AI-driven learning in three simple steps
-                </p>
-            </div>
-            <div class="steps-container">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <div class="step-content">
-                        <h3>Search a Topic</h3>
-                        <p>Enter any concept or topic you want to learn about</p>
-                        <div class="step-demo">
-                            <input type="text" placeholder="e.g., Photosynthesis, Quadratic Equations..." class="demo-input" id="demoTopic">
-                        </div>
-                    </div>
-                </div>
-                <div class="step-connector">
-                    <div class="connector-line"></div>
-                    <div class="connector-arrow">→</div>
-                </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <div class="step-content">
-                        <h3>AI Fetches Textbook</h3>
-                        <p>Our AI system finds the exact content from official NCERT or state-board textbooks</p>
-                        <div class="step-demo">
-                            <div class="textbook-preview">
-                                <div class="textbook-icon">📚</div>
-                                <p>NCERT Science Class 10</p>
-                                <span>Chapter 6: Life Processes</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="step-connector">
-                    <div class="connector-line"></div>
-                    <div class="connector-arrow">→</div>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <div class="step-content">
-                        <h3>AI Generates Content</h3>
-                        <p>Choose your preferred format - AI generates it instantly</p>
-                        <div class="format-selector">
-                            <button class="format-btn active" data-format="article">
-                                <span class="format-icon">📄</span>
-                                <span>Article</span>
-                            </button>
-                            <button class="format-btn" data-format="audio">
-                                <span class="format-icon">🎧</span>
-                                <span>Audio</span>
-                            </button>
-                            <button class="format-btn" data-format="video">
-                                <span class="format-icon">🎥</span>
-                                <span>Video</span>
-                            </button>
-                            <button class="format-btn" data-format="sandbox">
-                                <span class="format-icon">🔬</span>
-                                <span>Sandbox</span>
-                            </button>
-                            <button class="format-btn" data-format="code">
-                                <span class="format-icon">💻</span>
-                                <span>Code</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="demo-output" id="demoOutput">
-                <h3>AI-Generated Output Preview</h3>
-                <div class="output-preview" id="outputPreview">
-                    <div class="article-preview">
-                        <h4>Photosynthesis</h4>
-                        <p>Photosynthesis is the process by which plants make their own food using sunlight, water, and carbon dioxide. This process occurs in the chloroplasts of plant cells...</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Key Features Section -->
-    <section class="key-features">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Key Features</span>
-                <h2 class="section-title">Powered by Advanced AI</h2>
-                <p class="section-subtitle">
-                    Everything you need for intelligent, effective learning
-                </p>
-            </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-card-icon">📚</div>
-                    <h3>Textbook-Grounded</h3>
-                    <p>All content sourced exclusively from official NCERT and state-board textbooks</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-card-icon">🤖</div>
-                    <h3>AI-Powered Search</h3>
-                    <p>Intelligent search system that understands context and intent</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-card-icon">📄</div>
-                    <h3>Multiple Formats</h3>
-                    <p>Articles, audio lessons, videos, interactive sandboxes, and code examples</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-card-icon">🌐</div>
-                    <h3>Multi-Language AI</h3>
-                    <p>Available in English and all major Indian languages with AI translation</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-card-icon">🎯</div>
-                    <h3>Curriculum Aligned</h3>
-                    <p>Perfectly matches your school syllabus for classes 5-12</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-card-icon">⚡</div>
-                    <h3>Lightning Fast</h3>
-                    <p>Quick access to accurate, AI-generated educational content</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-card-icon">🔒</div>
-                    <h3>Safe & Trusted</h3>
-                    <p>No external unreliable sources, only official textbooks enhanced by AI</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-card-icon">📱</div>
-                    <h3>Responsive Design</h3>
-                    <p>Works seamlessly on desktop, tablet, and mobile devices</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Languages Section -->
-    <section class="languages">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Languages</span>
-                <h2 class="section-title">AI-Powered Multi-Language Support</h2>
-                <p class="section-subtitle">
-                    Learn in your preferred language. All content available in English and major Indian languages with AI translation.
-                </p>
-            </div>
-            <div class="languages-grid">
-                <div class="language-card">
-                    <div class="language-flag">🇬🇧</div>
-                    <h3>English</h3>
-                </div>
-                <div class="language-card">
-                    <div class="language-flag">🇮🇳</div>
-                    <h3>Hindi</h3>
-                </div>
-                <div class="language-card">
-                    <div class="language-flag">🇧🇩</div>
-                    <h3>Bengali</h3>
-                </div>
-                <div class="language-card">
-                    <div class="language-flag">🇮🇳</div>
-                    <h3>Telugu</h3>
-                </div>
-                <div class="language-card">
-                    <div class="language-flag">🇮🇳</div>
-                    <h3>Marathi</h3>
-                </div>
-                <div class="language-card">
-                    <div class="language-flag">🇮🇳</div>
-                    <h3>Tamil</h3>
-                </div>
-                <div class="language-card">
-                    <div class="language-flag">🇮🇳</div>
-                    <h3>Gujarati</h3>
-                </div>
-                <div class="language-card">
-                    <div class="language-flag">🇮🇳</div>
-                    <h3>Kannada</h3>
-                </div>
-                <div class="language-card">
-                    <div class="language-flag">🇮🇳</div>
-                    <h3>Malayalam</h3>
-                </div>
-                <div class="language-card">
-                    <div class="language-flag">🇮🇳</div>
-                    <h3>Punjabi</h3>
-                </div>
-                <div class="language-card">
-                    <div class="language-flag">🇮🇳</div>
-                    <h3>Odia</h3>
-                </div>
-                <div class="language-card">
-                    <div class="language-flag">🇮🇳</div>
-                    <h3>Assamese</h3>
-                </div>
-            </div>
-            <div class="languages-note">
-                <p>
-                    <strong>AI Translation:</strong> All content is automatically translated using advanced AI while preserving the original textbook accuracy. The original textbook content is maintained while making it accessible in your preferred language.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Safety & Trust Section -->
-    <section class="safety-trust">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Safety & Trust</span>
-                <h2 class="section-title">AI-Enhanced, Textbook-Grounded</h2>
-                <p class="section-subtitle">
-                    Your learning is our priority. We ensure accuracy, safety, and reliability in everything we provide.
-                </p>
-            </div>
-            <div class="trust-grid">
-                <div class="trust-card">
-                    <div class="trust-icon">📖</div>
-                    <h3>Textbook-Sourced Only</h3>
-                    <p>Every piece of content comes directly from official NCERT and state-board textbooks. No external or unreliable sources.</p>
-                </div>
-                <div class="trust-card">
-                    <div class="trust-icon">✅</div>
-                    <h3>AI-Verified Accuracy</h3>
-                    <p>All content is verified by AI against official educational standards to ensure 100% accuracy and reliability.</p>
-                </div>
-                <div class="trust-card">
-                    <div class="trust-icon">🎓</div>
-                    <h3>Curriculum Compliant</h3>
-                    <p>Perfectly aligned with your school curriculum, so you learn exactly what you need for exams.</p>
-                </div>
-                <div class="trust-card">
-                    <div class="trust-icon">🔒</div>
-                    <h3>Safe Learning Environment</h3>
-                    <p>No ads in learning content, no external links, and no unreliable information sources.</p>
-                </div>
-            </div>
-            <div class="trust-guarantee">
-                <div class="guarantee-content">
-                    <h3>Our AI Commitment</h3>
-                    <p>
-                        Adhithe is committed to providing a safe, accurate, and trustworthy learning experience powered by advanced AI. 
-                        We use only official educational materials as our source, ensuring that students receive reliable information that aligns 
-                        with their curriculum. No external content, no unreliable sources, just verified textbook knowledge enhanced by AI and 
-                        made accessible in multiple formats.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Monetization Section -->
-    <section class="monetization">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Monetization</span>
-                <h2 class="section-title">Free Learning, Ad-Supported</h2>
-                <p class="section-subtitle">
-                    Free access to all learning content. Ads only appear during media playback.
-                </p>
-            </div>
-            <div class="monetization-content">
-                <div class="monetization-info">
-                    <div class="info-card">
-                        <h3>Free Learning</h3>
-                        <p>
-                            All educational content on Adhithe is completely free. Students can search, 
-                            read articles, and access all learning materials without any cost.
-                        </p>
-                    </div>
-                    <div class="info-card">
-                        <h3>Ad-Supported Media</h3>
-                        <p>
-                            To keep the platform free, we show advertisements during audio and video playback, 
-                            as well as in article reading. These ads are carefully curated and do not interfere 
-                            with the learning experience.
-                        </p>
-                    </div>
-                </div>
-                <div class="ad-examples">
-                    <h3>Ad Placement Examples</h3>
-                    <div class="ad-demos">
-                        <div class="ad-demo-card">
-                            <h4>Audio Player</h4>
-                            <div class="audio-demo">
-                                <div class="audio-controls">
-                                    <div class="play-btn">▶</div>
-                                    <div class="audio-info">
-                                        <p>AI Lesson: Photosynthesis</p>
-                                        <div class="progress-bar"></div>
-                                    </div>
-                                </div>
-                                <div class="ad-placeholder audio-ad">
-                                    <span>Advertisement</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ad-demo-card">
-                            <h4>Video Player</h4>
-                            <div class="video-demo">
-                                <div class="video-placeholder">
-                                    <div class="play-icon-large">▶</div>
-                                </div>
-                                <div class="ad-placeholder video-ad">
-                                    <span>Advertisement</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ad-demo-card">
-                            <h4>Article Reading</h4>
-                            <div class="article-demo">
-                                <div class="article-content">
-                                    <h5>AI-Generated Article Title</h5>
-                                    <p>This is a sample paragraph from the AI-generated article content...</p>
-                                </div>
-                                <div class="ad-placeholder article-ad">
-                                    <span>Advertisement</span>
-                                </div>
-                                <div class="article-content">
-                                    <p>Article continues after the advertisement...</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="monetization-note">
-                    <p>
-                        <strong>Note:</strong> Ads are only shown during media consumption (audio/video) and 
-                        within articles. They do not appear in search results, topic listings, or interactive 
-                        sandboxes. Our goal is to provide free education while maintaining a clean, focused 
-                        learning environment.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-brand">
-                        <span class="brand-icon">🧠</span>
-                        <h3>Adhithe</h3>
-                    </div>
-                    <p>
-                        AI-powered textbook-grounded learning platform for classes 5-12. 
-                        Learn from official NCERT and state-board textbooks enhanced by advanced AI.
-                    </p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#how-it-works">How It Works</a></li>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#languages">Languages</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <ul>
-                        <li>Email: contact@adhithe.com</li>
-                        <li>Support: support@adhithe.com</li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Legal</h4>
-                    <ul>
-                        <li><a href="#privacy">Privacy Policy</a></li>
-                        <li><a href="#terms">Terms of Service</a></li>
-                        <li><a href="#copyright">Copyright Notice</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; <span id="currentYear"></span> Adhithe. All rights reserved.</p>
-                <p class="footer-note">
-                    Content sourced from official NCERT and state-board textbooks. 
-                    Adhithe is not affiliated with NCERT or any state education board.
-                </p>
-            </div>
-        </div>
-    </footer>
-
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
-

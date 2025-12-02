@@ -1,7 +1,7 @@
 {
-  "name": "adhithe-landing-page",
+  "name": "adhithe-comingsoon",
   "version": "1.0.0",
-  "description": "AI-themed landing page for Adhithe learning platform",
+  "description": "Coming soon page for Adhithe learning platform",
   "homepage": "https://prajwalb0208.github.io/Adhithe-landing-page",
   "private": true,
   "scripts": {
@@ -9,22 +9,5 @@
   },
   "devDependencies": {
     "gh-pages": "^6.3.0"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
   }
 }
