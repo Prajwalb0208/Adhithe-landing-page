@@ -131,3 +131,6 @@ function photosynthesis(light, water, co2) {
 
 export default HowItWorks;
 
+
+
+
