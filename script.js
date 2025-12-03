@@ -1,6 +1,4 @@
-// Coming Soon Page - Simple JavaScript
 
-// Handle notify form submission
 const notifyForm = document.getElementById('notifyForm');
 
 if (notifyForm) {
@@ -10,12 +8,9 @@ if (notifyForm) {
         const emailInput = notifyForm.querySelector('.email-input');
         const email = emailInput.value;
         
-        // Simple validation
         if (email && email.includes('@')) {
-            // In a real app, this would send to a backend
             console.log('Email submitted:', email);
             
-            // Show success message
             const btn = notifyForm.querySelector('.notify-btn');
             const originalText = btn.innerHTML;
             
