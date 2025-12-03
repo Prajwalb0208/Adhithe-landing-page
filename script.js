@@ -1,7 +1,7 @@
 const notifyForm = document.getElementById('notifyForm');
 
 if (notifyForm) {
-    notifyForm.addEventListener('submit', async (e) => {
+    notifyForm.addEventListener('submit', (e) => {
         e.preventDefault();
         
         const emailInput = notifyForm.querySelector('.email-input');
@@ -24,48 +24,15 @@ if (notifyForm) {
         btn.disabled = true;
         btn.innerHTML = '<span>Sending...</span>';
         
-        try {
-            // Using FormSubmit service (free, works with static sites)
-            // This will send email to your Mailjet account via SMTP
-            // Alternative: Use Mailjet Contact API or a simple form service
-            const API_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID';
+        // Simulate form submission (frontend only)
+        setTimeout(() => {
+            btn.innerHTML = '<span>✓ Notified!</span>';
+            btn.style.background = 'linear-gradient(135deg, #10b981 0%, #059669 100%)';
+            emailInput.value = '';
             
-            // Option 1: Using Formspree (recommended for GitHub Pages)
-            // Sign up at https://formspree.io, get your form ID, and replace YOUR_FORM_ID above
-            // Then configure Formspree to forward emails to your Mailjet account
+            // Show success message
+            showNotification('Thank you! We\'ll notify you when we launch.', 'success');
             
-            const response = await fetch(API_ENDPOINT, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
-                },
-                body: JSON.stringify({ 
-                    email: email,
-                    _subject: 'New Adhithe Coming Soon Signup',
-                    _replyto: email
-                }),
-            });
-            
-            const data = await response.json();
-            
-            if (response.ok) {
-                // Success
-                btn.innerHTML = '<span>✓ Notified!</span>';
-                btn.style.background = 'linear-gradient(135deg, #10b981 0%, #059669 100%)';
-                emailInput.value = '';
-                
-                // Show success message
-                showNotification('Thank you! We\'ll notify you when we launch.', 'success');
-            } else {
-                throw new Error(data.error || 'Failed to send email');
-            }
-            
-        } catch (error) {
-            console.error('Error sending email:', error);
-            btn.innerHTML = originalText;
-            showNotification('Something went wrong. Please try again.', 'error');
-        } finally {
             // Re-enable form after 3 seconds
             setTimeout(() => {
                 btn.innerHTML = originalText;
@@ -73,7 +40,7 @@ if (notifyForm) {
                 emailInput.disabled = false;
                 btn.disabled = false;
             }, 3000);
-        }
+        }, 1000);
     });
 }
 
