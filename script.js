@@ -57,5 +57,5 @@ window.addEventListener('scroll', () => {
 });
 
 // Console message
-console.log('%c🧠 Adhithe - Coming Soon', 'font-size: 20px; font-weight: bold; color: #6366f1;');
-console.log('%cAI-Powered Learning Platform', 'font-size: 12px; color: #475569;');
+console.log('%c🎙️ Adhithe - Coming Soon', 'font-size: 20px; font-weight: bold; color: #3b82f6;');
+console.log('%cLearn Anything, Progressively', 'font-size: 12px; color: #9ca3af;');
